@@ -32,7 +32,7 @@ class PyBulletEnvironment(EnvironmentAdapter):
         if self.robot_id is not None:
             p.removeBody(self.robot_id, physicsClientId=self.client_id)
         self.robot_id = p.loadURDF(
-            task_spec.get("robot_urdf", "r2d2.urdf"),
+            task_spec.get("robot_urdf", "humanoid_simple.urdf"),
             basePosition=task_spec.get("robot_start_pos", [0, 0, 0.5]),
             baseOrientation=p.getQuaternionFromEuler(task_spec.get("robot_start_ori", [0, 0, 0])),
             physicsClientId=self.client_id,

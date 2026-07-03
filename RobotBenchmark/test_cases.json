@@ -1,0 +1,36 @@
+[
+  {
+    "task_id": 101,
+    "name": "navigate_to_point_complex",
+    "category": "basic",
+    "description": "Navigate to a target location with obstacles",
+    "parameters": {
+      "robot_urdf": "r2d2.urdf",
+      "goal": [2.0, -1.5, 0.5],
+      "timeout": 30,
+      "avoid_obstacles": true
+    }
+  },
+  {
+    "task_id": 102,
+    "name": "pick_and_place_heavy",
+    "category": "atomic",
+    "description": "Pick and place a heavy object",
+    "parameters": {
+      "robot_urdf": "kuka_iiwa/model.urdf",
+      "object_pos": [1.2, 0.5, 0.2],
+      "max_weight": 5.0
+    }
+  },
+  {
+    "task_id": 103,
+    "name": "long_inspection_area_A",
+    "category": "long",
+    "description": "Detailed inspection of area A",
+    "parameters": {
+      "robot_urdf": "r2d2.urdf",
+      "duration": 120,
+      "scan_resolution": 0.05
+    }
+  }
+]

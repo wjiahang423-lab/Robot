@@ -1,9 +1,4 @@
 
----
-
-### `run_benchmark.py`
-
-```python
 import argparse
 from robot_benchmark.adapters.pybullet_env import PyBulletEnvironment
 from robot_benchmark.execution.executor import BenchmarkExecutor
