@@ -1,0 +1,13 @@
+environment:
+  type: pybullet
+  mode: dynamic
+
+task_structure:
+  atomic_skills: 1
+  basic_tasks: 1
+  long_running_tasks: 1
+  random_seed: 123
+
+task_constraints:
+  max_duration: 60
+  max_intervention: 3
